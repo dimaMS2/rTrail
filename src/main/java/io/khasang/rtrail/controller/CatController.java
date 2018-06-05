@@ -49,4 +49,10 @@ public class CatController {
     public Cat updateCat(@RequestBody Cat cat) {
         return catService.updateCat(cat);
     }
+
+    @RequestMapping(value = "/patch", method = RequestMethod.PATCH, produces = "application/json;charset=utf-8")
+    @ResponseBody
+    public Cat patchCat(@RequestBody Cat cat) {
+        return catService.patchCat(cat);
+    }
 }

@@ -52,4 +52,12 @@ public interface CatService {
      * @return updated cat
      */
     Cat updateCat(Cat cat);
+
+    /**
+     * method for patching cat
+     *
+     * @param  cat - cat for patching
+     * @return patched cat
+     */
+    Cat patchCat(Cat cat);
 }
